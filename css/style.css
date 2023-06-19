@@ -1,0 +1,231 @@
+:root {
+    --azul-escuro-fundo: #505255f6;
+    --branco-da-fonte: #f1f1f1;
+    --azul-escuro-fundo-2: #484877;
+}
+
+header {
+    background-color: var(--azul-escuro-fundo);
+    margin: 0 0 0 0;
+    padding: 10%;
+}
+
+header .inicio {
+    margin-top: 2%;
+    color: var(--branco-da-fonte);
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Dados{
+    margin-top: 8%;
+}
+
+.Foto {
+    width: 20%;
+    border-radius: 100%;
+}
+
+.nome {
+    font-size: 30px;
+}
+
+.descricao {
+    margin-bottom: 15%;
+}
+
+.botao {
+    background-color: rgb(93, 107, 96);
+    text-decoration: none;
+    margin-left: 25%;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 4px;
+    border: rgb(239, 235, 235) 4px solid;
+    border-radius: 10px;
+    color: var(--azul-escuro-fundo);
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background-color: rgb(114, 114, 120);
+    color: #868993;
+    font-weight: bold;
+    transform: scale(1.01);
+    padding: 6px;
+}
+
+main {
+    padding: 5% 0;
+    background-color: var(--azul-escuro-fundo-2);
+    color: var(--branco-da-fonte);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.sobremim {
+    margin: 2% 20%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.projetos {
+    margin-top: 8%;
+}
+
+.cards-projetos {
+    display: flex;
+    margin: 0 10px;
+}
+
+.projeto-unico {
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    transition: 0.2s;
+    background-color:#101011
+}
+
+.projeto-unico:hover {
+    transform: scale(1.05);
+}
+
+.sobre-o-projeto {
+    text-align: justify;
+    padding: 20px 10px ;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--branco-da-fonte);
+}
+
+.foto-projeto {
+    width: 60%;
+    height: 300px;
+}
+
+.titulo-projeto {
+    font-size: 25px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #00030f;
+    text-align: center;
+}
+
+.itens-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.carinho {
+    margin-top: 10px;
+}
+
+.Nathis {
+    margin-top: 30px;
+    color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 25px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Dados {
+        margin-top: 30%;
+        text-align: center;
+    }
+
+    .Foto {
+        width: 50%;
+        margin: 0 0% -100px 29%;
+    }
+
+    .nome {
+        font-size: 20px;
+
+    }
+
+    .descricao {
+        margin-bottom: 10%;
+
+    }
+
+    .botao {
+        margin-left: 8%;
+        font-size: 25px;
+    }    
+
+    .cv {
+        margin-top: 25px;
+    }
+
+    .sobremim {
+        margin: 2% 10%;
+        font-size: 18px;
+    }
+
+    .cards-projetos {
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .projeto-unico {
+        margin: 10px;
+        padding: 10px 0px;
+    }
+
+    .titulo-projeto {
+        font-size: 20px;
+    }
+
+    .itens-center {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .Foto {
+        margin: 0 20% -100px;
+        width: 60%;
+    }
+
+    .nome {
+        font-size: 16px;
+    }
+
+    .descricao {
+        margin-bottom: 5%;
+    }
+
+    .botao {
+        margin-left: 0%;
+        font-size: 25px;
+    }
+
+    .sobremim {
+        margin: 2% 5%;
+        font-size: 16px;
+    }
+}
